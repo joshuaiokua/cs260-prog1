@@ -1,2 +1,13 @@
-# PROG-01-2020Starter
-PROG01: Electric Time
+# PROG 01: Electric Time
+
+Brief description here
+
+## Author
+
+FirstName LastName (email@berkeley.edu)
+
+## Video Link
+
+youtube.com/yourLinkAddress
+
+
