@@ -4,7 +4,7 @@ Brief description here
 
 ## Author
 
-FirstName LastName (email@berkeley.edu)
+FirstName: Joshua Iokua LastName: Albano (jalbano@berkeley.edu)
 
 ## Video Link
 
