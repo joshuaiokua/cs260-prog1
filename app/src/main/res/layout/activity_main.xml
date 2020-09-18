@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputDistance"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:autofillHints=""
+        android:background="@drawable/blob"
+        android:drawablePadding="0dp"
+        android:ems="10"
+        android:hint="@string/input_distance_hint"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/blob8"
+        android:drawablePadding="0dp"
+        android:ems="10"
+        android:text="@string/button"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:scrollIndicators="top"
+        android:scrollbars="horizontal"
+        android:transitionGroup="false"
+        android:visibility="visible"
+        app:checkedChip="@id/chipWalking"
+        app:chipSpacing="1dp"
+        app:chipSpacingHorizontal="5dp"
+        app:chipSpacingVertical="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:selectionRequired="true"
+        app:singleSelection="false">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipWalking"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_Walking"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list"
+            app:chipIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipEvolveBamboo"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_EvolveBamboo"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBoostedMIni"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="true"
+            android:text="@string/chipText_BoostedMini"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipSegwayNinebotSPlus"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_SegwayNinebotSPlus"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipHovertraxHoverboard"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_HovertraxHoverboard"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipOneWheelXR"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_OneWheelXR"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipMotoTec"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_MotoTec"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipRazor"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_Razor"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipSegwayNinebotS"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_SegwayNinebotS"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipGeoBlade"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:checked="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/chipText_GeoBlade"
+            android:textAppearance="@style/AppTheme.Chip"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="@color/bg_chip_state_list" />
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

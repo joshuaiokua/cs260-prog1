@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Project01</string>
+
+    <string name="input_distance_hint">0 mi</string>
+
+    <string name="chipText_Walking">Foot (Walking)</string>
+    <string name="chipText_BoostedMini">Boosted Mini S</string>
+    <string name="chipText_EvolveBamboo" formatted="true">Evolve Bamboo GTR</string>
+    <string name="chipText_SegwayNinebotSPlus">Segway Ninebot S+</string>
+    <string name="chipText_HovertraxHoverboard">Hovertrax Hoverboard</string>
+    <string name="chipText_OneWheelXR">OneWheel XR</string>
+    <string name="chipText_MotoTec">Mototec Skateboard</string>
+    <string name="chipText_SegwayNinebotS">Segway Ninebot S</string>
+    <string name="chipText_Razor">Razor Scooter</string>
+    <string name="chipText_GeoBlade">GeoBlade 500</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+    <string name="button">Go</string>
+
+    <!--  Strings for ResultingActivity  -->
+    <string name="recordedDistanceMI">mi</string>
+</resources>
