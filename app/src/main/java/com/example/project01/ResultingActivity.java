@@ -26,21 +26,14 @@ public class ResultingActivity extends AppCompatActivity {
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
         String recordedDistance = intent.getStringExtra(MainActivity.RECORDED_DISTANCE);
+        if (recordedDistance != null && recordedDistance.isEmpty()) {
+            recordedDistance = "0";
+        }
         ArrayList<String> recordedTransportationOptions = intent.getStringArrayListExtra(MainActivity.TRANSPORT_OPTIONS);
 
         // Capture the layout's TextView and set the string as its text
         TextView recordedDistanceTextView = findViewById(R.id.recordedDistanceTextView);
         recordedDistanceTextView.setText(String.format("%s %s", recordedDistance, recordedDistanceTextView.getText()));
-        // TextView textView2 = findViewById(R.id.textView2);
-        /*assert recordedTransportationOptions != null;
-        for(int i = 0; i < recordedTransportationOptions.size(); i++) {
-            textView2.append(recordedTransportationOptions.get(i));
-        }*/
-
-        /*TextView textView3 = findViewById(R.id.textView3);
-        String key = recordedTransportationOptions.get(0);
-        AbstractMap.SimpleEntry<Double, Integer> keyedValue = transportOptionsMap.get(key);
-        textView3.setText(String.valueOf(keyedValue.getKey()));*/
 
         // RecyclerView
         recyclerView = findViewById(R.id.recyclerView);
