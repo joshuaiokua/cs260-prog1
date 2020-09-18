@@ -22,7 +22,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
     private ArrayList<String> arrayList;
     private String recordedString;
-    int images[] = {R.drawable.blob_icon_1, R.drawable.blob_icon_2, R.drawable.blob_icon_3,
+    int[] images = {R.drawable.blob_icon_1, R.drawable.blob_icon_2, R.drawable.blob_icon_3,
             R.drawable.blob_icon_4, R.drawable.blob_icon_5, R.drawable.blob_icon_6, R.drawable.blob_icon_7};
 
     public RecyclerAdapter(ArrayList<String> arrayList, String recordedString) {
@@ -35,9 +35,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.recyclerview_row_layout, parent, false);
-        MyViewHolder myViewHolder = new MyViewHolder(view);
 
-        return myViewHolder;
+        return new MyViewHolder(view);
     }
 
     @Override

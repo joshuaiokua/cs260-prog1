@@ -34,7 +34,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/blob2" />
+                app:srcCompat="@drawable/blob2"/>
 
             <TextView
                 android:id="@+id/transportTime"
@@ -48,7 +48,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/rowBlob"
                 app:layout_constraintEnd_toEndOf="@+id/rowBlob"
                 app:layout_constraintStart_toStartOf="@+id/rowBlob"
-                app:layout_constraintTop_toTopOf="@+id/rowBlob" />
+                app:layout_constraintTop_toTopOf="@+id/rowBlob"
+                tools:ignore="HardcodedText"/>
 
             <TextView
                 android:id="@+id/transportMinutes"
@@ -62,7 +63,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/rowBlob"
                 app:layout_constraintStart_toStartOf="@+id/rowBlob"
-                app:layout_constraintTop_toBottomOf="@+id/transportTime" />
+                app:layout_constraintTop_toBottomOf="@+id/transportTime"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/transportName"
@@ -73,10 +75,11 @@
                 android:textColor="@color/textBody"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/rowBlob"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
