@@ -1,5 +1,6 @@
 package com.example.project01;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,15 +11,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.AbstractMap;
+import java.util.AbstractMap.SimpleEntry;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Random;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> {
 
     private ArrayList<String> arrayList;
     private String recordedString;
+
+    // List of Blob Icons to be randomly assigned to each item row
     int[] images = {R.drawable.blob_icon_1, R.drawable.blob_icon_2, R.drawable.blob_icon_3,
             R.drawable.blob_icon_4, R.drawable.blob_icon_5, R.drawable.blob_icon_6, R.drawable.blob_icon_7};
 
@@ -70,6 +73,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private void getTime(String inputDistance, double vehicleMileage, Integer vehicleRange,
                          TextView timeOutputField, TextView minuteOutputField) {
         int inputDistanceNumber = Integer.parseInt(inputDistance);
@@ -83,17 +87,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     }
 
     // HashMap of transportation options. Keyed by name with both speed and range values
-    public static final Map<String, AbstractMap.SimpleEntry<Double, Integer>> transportOptionsMap = new HashMap<>();
+    public static final HashMap<String, SimpleEntry<Double, Integer>> transportOptionsMap = new HashMap<>();
     static {
-        transportOptionsMap.put("Foot (Walking)",  new AbstractMap.SimpleEntry(3.1, 30));
-        transportOptionsMap.put("Boosted Mini S",  new AbstractMap.SimpleEntry(18.0, 7));
-        transportOptionsMap.put("Evolve Bamboo GTR",  new AbstractMap.SimpleEntry(24.0, 31));
-        transportOptionsMap.put("Segway Ninebot S+",  new AbstractMap.SimpleEntry(12.0, 22));
-        transportOptionsMap.put("Hovertrax Hoverboard",  new AbstractMap.SimpleEntry(9.0, 6));
-        transportOptionsMap.put("OneWheel XR",  new AbstractMap.SimpleEntry(19.0, 18));
-        transportOptionsMap.put("Mototec Skateboard",  new AbstractMap.SimpleEntry(22.0, 10));
-        transportOptionsMap.put("Segway Ninebot S",  new AbstractMap.SimpleEntry(10.0, 13));
-        transportOptionsMap.put("Razor Scooter",  new AbstractMap.SimpleEntry(18.0, 15));
-        transportOptionsMap.put("GeoBlade 500",  new AbstractMap.SimpleEntry(15.0, 8));
+        transportOptionsMap.put("Foot (Walking)",  new SimpleEntry(3.1, 30));
+        transportOptionsMap.put("Boosted Mini S",  new SimpleEntry(18.0, 7));
+        transportOptionsMap.put("Evolve Bamboo GTR",  new SimpleEntry(24.0, 31));
+        transportOptionsMap.put("Segway Ninebot S+",  new SimpleEntry(12.0, 22));
+        transportOptionsMap.put("Hovertrax Hoverboard",  new SimpleEntry(9.0, 6));
+        transportOptionsMap.put("OneWheel XR",  new SimpleEntry(19.0, 18));
+        transportOptionsMap.put("Mototec Skateboard",  new SimpleEntry(22.0, 10));
+        transportOptionsMap.put("Segway Ninebot S",  new SimpleEntry(10.0, 13));
+        transportOptionsMap.put("Razor Scooter",  new SimpleEntry(18.0, 15));
+        transportOptionsMap.put("GeoBlade 500",  new SimpleEntry(15.0, 8));
     }
 }

@@ -6,13 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.AbstractMap;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ResultingActivity extends AppCompatActivity {
     private RecyclerView recyclerView;

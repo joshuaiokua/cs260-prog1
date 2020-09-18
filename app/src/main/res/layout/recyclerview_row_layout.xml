@@ -43,27 +43,29 @@
                 android:text="12"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="25sp"
+                android:textSize="28sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/rowBlob"
                 app:layout_constraintEnd_toEndOf="@+id/rowBlob"
                 app:layout_constraintStart_toStartOf="@+id/rowBlob"
                 app:layout_constraintTop_toTopOf="@+id/rowBlob"
-                tools:ignore="HardcodedText"/>
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/transportMinutes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
                 android:text="minutes"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/rowBlob"
                 app:layout_constraintStart_toStartOf="@+id/rowBlob"
-                app:layout_constraintTop_toBottomOf="@+id/transportTime"
+                app:layout_constraintTop_toTopOf="@+id/transportTime"
+                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -73,7 +75,7 @@
                 android:text="Foot (Walking)"
                 android:textAlignment="textStart"
                 android:textColor="@color/textBody"
-                android:textSize="25sp"
+                android:textSize="26sp"
                 android:textStyle="bold"
                 android:layout_marginStart="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"

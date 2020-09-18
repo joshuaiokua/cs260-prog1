@@ -11,9 +11,7 @@ import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.TreeMap;
 
 public class MainActivity extends AppCompatActivity {
     protected Intent runIntent;
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 runIntent.putExtra(RECORDED_DISTANCE, inputDistanceString);
 
                 // Sends Transportation Option Choices to ResultingActivity
-                ArrayList<String> checkedTransportList = new ArrayList<String>();
+                ArrayList<String> checkedTransportList = new ArrayList<>();
                 List<Integer> ids = chipGroup.getCheckedChipIds();
                 for (Integer id:ids){
                     Chip chip = chipGroup.findViewById(id);
