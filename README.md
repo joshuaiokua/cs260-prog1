@@ -8,6 +8,6 @@ FirstName: Joshua Iokua LastName: Albano (jalbano@berkeley.edu)
 
 ## Video Link
 
-youtube.com/yourLinkAddress
+https://youtu.be/VTgzlkNfME4
 
 
