@@ -1,6 +1,6 @@
 # PROG 01: Electric Time
 
-Brief description here
+This app provides users the means to input a desired travel distance (e.g. 9 miles), choose various transportations, and then see how long it will take to travel that distance given their chosen option(s).
 
 ## Author
 
